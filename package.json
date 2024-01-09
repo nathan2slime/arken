@@ -1,0 +1,57 @@
+{
+  "name": "arken",
+  "private": true,
+  "scripts": {
+    "build": "dotenv -- turbo run build",
+    "test": "dotenv -- turbo run test",
+    "seed": "dotenv -- turbo run seed",
+    "clean": "rm -rf node_modules",
+    "start": "dotenv -- turbo run start",
+    "dev": "dotenv -- turbo run dev",
+    "prod": "dotenv -- turbo run prod",
+    "test:e2e": "dotenv -e .env.test -- turbo run test:e2e",
+    "test:cov": "dotenv -e .env.test -- turbo run test:cov",
+    "commit": "git-cz",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@ark/tsconfig": "*",
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@types/node": "^20.10.5",
+    "axios": "^1.4.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "dotenv-cli": "^7.1.0",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "prettier": "latest",
+    "ts-node": "^10.9.1",
+    "tsup": "^6.7.0",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "resolutions": {
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "installConfig": {
+    "hoistingLimits": "none"
+  },
+  "keywords": [],
+  "author": "nathan3boss@gmail.com",
+  "license": "ISC"
+}

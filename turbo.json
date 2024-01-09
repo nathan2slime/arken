@@ -1,0 +1,43 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "globalDotEnv": [".env", ".env.prod"],
+  "pipeline": {
+    "build": {
+      "cache": false,
+      "dependsOn": ["^build"],
+      "env": ["NEXT_PUBLIC_*"],
+      "dotEnv": [
+        ".env.production.local",
+        ".env.local",
+        ".env.production",
+        ".env"
+      ],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "start": {
+      "cache": false,
+      "dependsOn": ["^generate"]
+    },
+    "seed": {
+      "cache": false
+    },
+    "generate": {
+      "cache": false
+    },
+    "test": {
+      "cache": false
+    },
+    "prod": {},
+    "test:cov": {
+      "cache": false
+    },
+    "test:e2e": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "dependsOn": ["^generate"]
+    }
+  }
+}

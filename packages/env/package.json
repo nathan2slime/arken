@@ -1,0 +1,18 @@
+{
+  "name": "@ark/env",
+  "description": "Env",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "devDependencies": {
+    "@ark/tsconfig": "*",
+    "@t3-oss/env-core": "^0.7.1",
+    "tsup": "latest",
+    "zod": "^3.22.4"
+  }
+}

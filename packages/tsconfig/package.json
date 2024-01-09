@@ -1,0 +1,13 @@
+{
+  "name": "@ark/tsconfig",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "base.json",
+    "nestjs.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

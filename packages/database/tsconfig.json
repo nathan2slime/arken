@@ -1,0 +1,13 @@
+{
+  "extends": "@ark/tsconfig/base.json",
+  "include": [
+    "src/**/*.ts",
+    "index.ts"
+  ],
+  "compilerOptions": {
+    "module": "CommonJS"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
