@@ -33,7 +33,7 @@ Você precisa ter as seguintes ferramentas a seguir, instaladas na sua máquina.
 | `@ark/tsconfig` | Pacote com arquivos de configuração de TypeScript   |
 | `@ark/web`      | Aplicação Vue.js                                    |
 | `@ark/database` | Pacote com modelos de tabelas do banco de dados     |
-| `@ark/env`      | Pacote pra validar e carregar variavéis de ambiente |
+| `@ark/env`      | Pacote pra validar e carregar variáveis de ambiente |
 
 ### 👾 Variavéis de ambiente
 
@@ -81,7 +81,7 @@ cd arken
 
 - No Docker
 
-  Crie um arquivo `.env` no modelo mostrado na seção de variavéis de ambiente.
+  Crie um arquivo `.env` no modelo mostrado na seção de variáveis de ambiente.
 
   > Rode o seguinte comando para instalar as dependências
 
