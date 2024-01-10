@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common'
 import { logger } from '@ark/logger'
 import { toDate, parse, isValid } from 'date-fns'
 import xlsx from 'xlsx'
+import { SignatureItem } from './table.types'
 
 @Injectable()
 export class TableService {
@@ -17,7 +18,7 @@ export class TableService {
     return null
   }
 
-  getData(file: Express.Multer.File) {
+  getData(file: Express.Multer.File): SignatureItem[] {
     logger.start('parse table', { file: file.filename })
 
     const res = xlsx.read(file.buffer, {

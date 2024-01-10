@@ -1,0 +1,13 @@
+.wrapper {
+  width: 100%;
+  background: $color-background;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+
+  padding: 20px;
+}

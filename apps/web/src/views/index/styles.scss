@@ -1,0 +1,19 @@
+.index {
+  width: 100%;
+
+  padding: 110px 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .chart-graphic {
+    background: $color-foreground;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  @media (min-width: 500px) {
+    padding: 96px 40px 40px;
+  }
+}

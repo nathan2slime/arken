@@ -7,7 +7,7 @@ export class StatController {
   constructor(private readonly statService: StatService) {}
 
   @Get()
-  findAll() {
+  getStats() {
     return this.statService.getStats()
   }
 }
