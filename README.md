@@ -35,9 +35,9 @@ Você precisa ter as seguintes ferramentas a seguir, instaladas na sua máquina.
 | `@ark/database` | Pacote com modelos de tabelas do banco de dados     |
 | `@ark/env`      | Pacote pra validar e carregar variáveis de ambiente |
 
-### 👾 Variavéis de ambiente
+### 👾 Variáveis de ambiente
 
-> Aqui está um exemplo das variavéis de ambiente desse projeto
+> Aqui está um exemplo das variáveis de ambiente desse projeto
 
 ```
 ## Configurações do PostgreSQL
