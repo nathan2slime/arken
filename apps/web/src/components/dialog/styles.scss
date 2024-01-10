@@ -1,0 +1,40 @@
+.shadow {
+  position: fixed;
+  background: #c4d3d569;
+  pointer-events: none;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  right: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  backdrop-filter: blur(2px);
+  transition: opacity 0.1s;
+
+  > div {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: $color-foreground;
+    transform: translateY(-80px);
+    transition:
+      transform 0.15s ease-in-out 0.13s,
+      opacity 0.2s ease-in-out 0.13s;
+    opacity: 0;
+  }
+
+  &.open {
+    pointer-events: all;
+    opacity: 1;
+
+    > div {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

@@ -10,6 +10,7 @@ import 'reflect-metadata'
 const bootstrap = async () => {
   const app = await NestFactory.create(AppModule, {
     logger: ['fatal', 'error'],
+    cors: true,
   })
 
   const config = new DocumentBuilder()

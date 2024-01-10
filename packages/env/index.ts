@@ -10,6 +10,7 @@ export const env = createEnv({
     POSTGRES_USER: z.string().min(1),
     POSTGRES_PASSWORD: z.string().min(1),
     POSTGRES_DB: z.string().min(1),
+    VITE_APP_API_URL: z.string().url(),
   },
 
   runtimeEnv: {
