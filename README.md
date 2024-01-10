@@ -67,9 +67,8 @@ Entre no diretório de projeto.
 cd arken
 ```
 
-### 🚀 Running
-
-> Os comandos a seguir são executados no diretório pai
+### 🚀 Executando o projeto
+> Você pode rodar o projeto usando Docker, e os comandos a seguir são executados no diretório pai
 
 - Usando Docker
 
@@ -79,7 +78,7 @@ cd arken
   docker compose up
   ```
 
-- No Docker
+- Sem Docker
 
   Crie um arquivo `.env` no modelo mostrado na seção de variáveis de ambiente.
 
